@@ -8,7 +8,8 @@ What I coded:
 4. **app.py -- index**. Shows a summary table of user owned stock and funds. 
 5. **app.py -- sell**. Lets user sell stocks, removes sold stocks from user's owned stocks, updates money balance.
 6. **app.py -- history**. Shows user's transaction history.
-7. **HTML templates** except apology.html, login.html, layout.html.
+7. **app.py -- change**. Lets user change password.
+8. **HTML templates** except apology.html, login.html, layout.html.
 
 All other code was provided by CS50
 
