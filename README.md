@@ -1,5 +1,5 @@
 # finance
-Flask app to buy/sell imaginary stocks. Did this as part of [CS50 problem set 9](https://cs50.harvard.edu/x/2022/psets/9/finance/)
+Flask app to buy/sell imaginary stocks. Did this as part of [CS50's problem set 9](https://cs50.harvard.edu/x/2022/psets/9/finance/)
 
 What I coded: 
 1. **app.py -- register**. Lets user sign up on the site. Stores user info in a sqlite3 database
