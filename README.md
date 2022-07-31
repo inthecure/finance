@@ -11,3 +11,5 @@ What I coded:
 7. **HTML templates** except apology.html, login.html, layout.html.
 
 All other code was provided by CS50
+
+P.S. this might be annoying to run, so here's [CS50 staff solution](https://finance.cs50.net/) to showcase what the result should look like.
