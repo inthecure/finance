@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Register Account
+{% endblock %}
+
+{%block main %}
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" required maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,20}$" title="Must contain 1 number, 1 uppercase, 1 lowercase character, 1 special symbol">
+            <i class="bi bi-eye-slash" id="toggle-password"></i>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Repeat Password" type="password" required maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,20}$" title="Must contain 1 number, 1 uppercase, 1 lowercase character, 1 special symbol">
+            <i class="bi bi-eye-slash" id="toggle-confirmation"></i>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}

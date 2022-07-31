@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Change Password
+
+{% endblock %}
+
+{% block main %}
+
+<form action="/change" method="post">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="current-password" name="current-password" placeholder="Current Password" type="password" required maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,20}$" title="Must contain 1 number, 1 uppercase, 1 lowercase character, 1 special symbol">
+        <i class="bi bi-eye-slash" id="toggle-current-password"></i>
+    </div>
+
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="New Password" type="password" required maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,20}$" title="Must contain 1 number, 1 uppercase, 1 lowercase character, 1 special symbol">
+        <i class="bi bi-eye-slash" id="toggle-password"></i>
+    </div>
+
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Repeat Password" type="password" required maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,20}$" title="Must contain 1 number, 1 uppercase, 1 lowercase character, 1 special symbol">
+        <i class="bi bi-eye-slash" id="toggle-confirmation"></i>
+    </div>
+    <button class="btn btn-primary" type="submit">Change</button>
+</form>
+
+{% endblock %}
